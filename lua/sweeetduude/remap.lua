@@ -8,6 +8,12 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 vim.keymap.set("n", "Q", "<nop>")
 
+vim.keymap.set("n", "+", "$")
+
+
+vim.keymap.set("n", "<leader>de", "d$")
+
+
 for _, mode in pairs({ 'n', 'i', 'v', 'x' }) do
     for _, key in pairs({ '<Up>', '<Down>', '<Left>', '<Right>', '<Home>', '<End>' }) do
         vim.keymap.set(mode, key, '<nop>')
