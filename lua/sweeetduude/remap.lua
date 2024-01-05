@@ -19,3 +19,9 @@ for _, mode in pairs({ 'n', 'i', 'v', 'x' }) do
         vim.keymap.set(mode, key, '<nop>')
     end
 end
+
+
+
+-- change before/after first =
+vim.keymap.set("n", "<leader>db", "0f=hc^", { desc = "chage before =" })
+vim.keymap.set("n", "<leader>da", "0f=lc$", { desc = "chage after =" })
