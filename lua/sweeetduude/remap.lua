@@ -7,9 +7,12 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "scroll down" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "scroll up" })
 
 vim.keymap.set("n", "+", "$", { desc = "end of line" })
+
 vim.keymap.set("n", "<leader>de", "d$", { desc = "delete to end of line" })
-vim.keymap.set("n", "<leader>db", "0f=hc^", { desc = "chage before =" })
-vim.keymap.set("n", "<leader>da", "0f=lc$", { desc = "chage after =" })
+vim.keymap.set("n", "<leader>db=", "0f=hc^", { desc = "chage before =" })
+vim.keymap.set("n", "<leader>da=", "0f=lc$", { desc = "chage after =" })
+vim.keymap.set("n", "<leader>db:", "0f:hc^", { desc = "chage before :" })
+vim.keymap.set("n", "<leader>da:", "0f:lc$", { desc = "chage after :" })
 
 vim.keymap.set("v", "<leader>a(", "c()<esc>P", { desc = "put selection in parens" })
 vim.keymap.set("v", "<leader>a[", "c[]<esc>P", { desc = "put selection in square brackets" })

@@ -31,6 +31,6 @@ return {
                 async = false,
                 timeout_ms = 1000,
             })
-        end, { desc = "Format file or range (in visual mode)" })
+        end, { desc = "make pretty" })
     end,
 }
