@@ -30,16 +30,9 @@ for _, mode in pairs({ 'n', 'i', 'v', 'x' }) do
     end
 end
 
--- add C-c to add to clipboard
 vim.keymap.set('v', "<C-c>", '"+y')
-
--- add C-x to cut to clipboard
 vim.keymap.set('v', "<C-x>", '"+d')
-
--- add C-v to paste from clipboard
 vim.keymap.set('i', "<C-v>", '<esc>"+p')
-
-
 
 vim.keymap.set('v', '<leader>gpt', 'yGoInstructions:<esc>OCode:<esc>p<esc>kVG"+d',
     { desc = "copy to chat-GPT template" })
